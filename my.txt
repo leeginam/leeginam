@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="table01.TableVariable" alias="user"/>
+	</typeAliases>
+
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver"/>
+				<property name="url" value="jdbc:mysql://localhost/mydb"/>
+				<property name="username" value="root"/>
+				<property name="password" value="1234"/>
+			</dataSource>
+		</environment>
+	</environments>
+
+		<mappers>
+			<mapper resource="dao/Mapper.xml" />
+		</mappers>
+</configuration>
+
+==================================================
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="userSQL">
+	<resultMap type="user" id="userResult">
+		<result property="name" column="NAME"/>
+		<result property="id" column="id"/>
+		<result property="pwd" column="pwd"/>
+	</resultMap>
+
+</mapper>
+
+
+======================================
+	public static void close(Connection conn, PreparedStatement pstmt) {
+		try {
+			if(pstmt!=null)	pstmt.close();
+			if(conn!=null) conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void close(Connection conn, PreparedStatement pstmt, ResultSet rs) {
+		try {
+			if(rs!=null) rs.close();
+			if(pstmt!=null)	pstmt.close();
+			if(conn!=null) conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+============================================
+	public static UserDAO getInstance() {
+		if (instance == null) {
+			synchronized (UserDAO.class) {
+				instance = new UserDAO();
+			}
+		}
+		return instance;
+	}
+
+=====================================
+	public DAO() {
+		try {
+			Reader reader = Resources.getResourceAsReader("NewFile.xml");
+			factory = new SqlSessionFactoryBuilder().build(reader);
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
