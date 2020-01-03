@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+import javabean.Userbean;
+
+public class Userjava {
+	
+	public ArrayList<Userbean> Usermaker() {
+		
+		Userbean user = new Userbean();
+		ArrayList<Userbean> arr = new ArrayList<Userbean>(5);
+		
+		user.setId("kim1234");
+		user.setName("±è´öÃ¶");
+		user.setPass("1234");
+		user.setEmail("kim@naver.com");
+		user.setSnum("1");
+		user.setYear(1992);
+		
+		arr.add(user);
+		
+		user.setId("lee4321");
+		user.setName("ÀÌ¼º°è");
+		user.setPass("4321");
+		user.setEmail("lee@naver.com");
+		user.setSnum("2");
+		user.setYear(1993);
+		
+		arr.add(user);
+		
+		user.setId("park2222");
+		user.setName("¹Ú¹ÎÁö");
+		user.setPass("1234");
+		user.setEmail("park@naver.com");
+		user.setSnum("3");
+		user.setYear(1994);
+		
+		arr.add(user);
+		
+		user.setId("choi3333");
+		user.setName("ÃÖÈ«¸¸");
+		user.setPass("1234");
+		user.setEmail("choi@naver.com");
+		user.setSnum("4");
+		user.setYear(1995);
+		
+		arr.add(user);
+		
+		user.setId("han4444");
+		user.setName("ÇÑÁö¹Î");
+		user.setPass("1234");
+		user.setEmail("han@naver.com");
+		user.setSnum("5");
+		user.setYear(1996);
+		
+		arr.add(user);
+		
+		return arr;
+	}
+
+}

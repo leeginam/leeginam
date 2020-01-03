@@ -1,0 +1,73 @@
+	h1{
+		font-family:Verdana;
+		text-align:center;
+		color: white;
+	}
+
+	.notice{
+		font-family:Verdana;
+		font-size:12px;
+		color: white;
+	}
+
+	#box1{
+		width:600px;
+		padding:25px;
+		border-radius:30px;
+		margin:30px;
+		background-color:#f5f5f5;
+		box-align:center;
+	}
+	#box2{
+		width:max;
+		padding:25px;
+		border-radius:30px;
+		margin:30px;
+		background-color:#f5f5f5;
+		box-align:bottom;
+	}
+	select[name="hint"]{
+		height:30px;
+		width:300px;
+	}
+	
+	div{
+
+	}
+	input[type="text"],input[type="password"]{
+		background-color:white;
+		border:0px;
+		border-radius:20px;
+		height:30px;
+	}
+	input[type="button"]{
+		background-color:#ff502f;
+		border:0px;
+		border-radius:20px;
+		height:30px;
+		font-family:Verdana;
+		color:white;
+		font-weight:bold;
+	}
+	input[type="submit"]{
+		background-color:#ff502f;
+		border:0px;
+		border-radius:20px;
+		height:30px;
+		font-family:Verdana;
+		color:white;
+		font-weight:bold;
+	
+	}
+	.disabled {
+    pointer-events: none;
+    background-color: #eee;
+    color: #555;
+    opacity: 1;
+	}
+
+	tr,td{
+		text-align:"center";
+		color:#004d61;
+		font-family:Verdana;
+	}
