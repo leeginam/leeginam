@@ -1,0 +1,473 @@
+
+	a{
+		color:white;
+		text-decoration:none;
+	}
+	#headermenu{
+		width:1000px;
+		position:absolute;
+		left:30%;
+		
+	}
+	#headermenuright{
+		position:absolute;
+		right:10%;
+		top:20px;
+	}
+	#menulogo{
+		position:absolute;
+		left:47%;
+		top:30px;
+	}
+	.menuleft{
+		
+		display:inline-block;
+		position:relative;
+	
+	}	
+	.menuright{
+		display:inline-block;
+		position:relative;
+		margin-left:10px;
+		margin-right:10px;
+	}
+		
+	#mainwrapper{
+		z-index:50;
+		width:1208px;
+		height:100%;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		padding-top:150px;
+		
+		}
+
+	ul{
+		margin:0;
+	}
+	ul.headermenu li.menuleft ul.submenu {
+		display:none;
+		height:55px;
+		padding:0px;
+		margin:0px;
+		border:0px;
+		position:relative;
+		width:600px;
+		z-index:200;
+		top:60px;
+		left:-200px;
+		text-align:center;
+		background:#333333;
+		color:white;
+		border-radius:0 0 20px 20px;
+		box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+	}
+	ul.headermenu li.menuleft ul.submenu li{
+		float:left;
+		padding-right:10px;
+		padding-left:10px;
+		z-index:200;
+		padding-top:17px;
+		padding-bottom:17px;
+		
+	
+		
+	}
+	ul.headermenu li.menuleft {
+		padding-top:19.5px;
+		padding-bottom:19.5px;
+		width:100px;
+		z-index:200;
+		font-family: 'monospace';
+		text-align:center;
+		vertical-align:middle;
+		
+		
+	}
+	ul.headermenu li.menuleft:hover {
+		background:#5c5757;
+	}
+	ul.headermenu li.menuleft:hover ul.submenu {
+		position:absolute;
+		
+		display:block;
+		
+	}
+	span a {
+		color:red;
+		font-size:30px;
+		font-weight:bold;
+	}
+	li.menuright a{
+		color:black;
+	}
+		
+	ul.headermenu li.menuleft ul.submenu li:hover {
+		background:#5c5757;
+		
+	}
+	.menuleft li{
+		
+		list-style:none;
+	}
+	
+	.maintitle{
+		padding:20px 0;
+		margin:0;
+		color:red;
+	}
+	.submenu{
+		text-align:center;
+	}
+	
+	#bookingbox{
+		
+		position:relative;
+		border:solid black 1px;
+		height:100%;
+		width:100%;
+		display:inline-block;
+		margin:60px 0;
+		background-color:#f9f6f7;
+		border-radius:10px;
+	}
+	#bookingfirst{
+		float:left;
+		height:400px;
+		width:300px;
+	}
+	#bookingsecond{
+		float:left;
+		height:400px;
+		width:300px;
+	}
+	#bookinglocate{
+		width:90%;
+		height:80%;
+		margin-top:10px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#bookinglocate ul{
+		padding:0;
+
+	}
+	#bookinglocate ul li{
+		list-style:none;
+		background:white;
+		padding-top:3px;
+		padding-bottom:3px;
+	}
+	#bookingmovie{
+		width:90%;
+		height:80%;
+		margin-top:15px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	#bookingday{
+		height:100%;
+		width:300px;
+		
+		float:left;
+	}
+	#bookingday ul{
+		padding:0;
+		overflow-y:scroll;
+		height:200px;
+		
+	}
+	#bookingday ul li{
+		list-style:none;
+		padding-top:5px;
+		padding-bottom:5px;
+		text-align:left;
+		padding-left:30px;
+		font-size:11pt;
+		
+	}
+	#bookingperson{
+		float:left;
+		text-align:left;
+		height:198px;
+		width:600px;
+	}
+	#bookinginfo{
+		clear:both;
+		float:left;
+		margin-top:-100px;
+		margin-left:-10px;
+		height:200px;
+		width:620px;
+	}
+	#bookingfee{
+		float:left;
+		margin-top:-12px;
+		height:220px;
+		width:400px;
+	}
+	#bookingperson div ul{
+		list-style:none;
+		display:inline;
+		color:white;
+		position:relative;
+		top:20px;
+		
+	}
+	#bookingperson div ul:nth-child(2){
+		list-style:none;
+		display:inline;
+		color:white;
+		position:relative;
+		top:40px;
+		
+	}
+	#bookingperson div ul li{
+		list-style:none;
+		display:inline;
+		color:white;
+		
+
+	}
+	#bookingperson div ul li:nth-child(n+3){
+		list-style:none;
+		display:inline;
+		color:white;
+		border:solid 1px black;
+		margin-left:10px;
+		padding:3px 5px;
+		cursor: pointer;	
+	}
+	#bookingperson div ul li:nth-child(2){
+		margin-left:100px;
+	}
+
+	.moinfo{
+	width:90%;
+	height:140px;
+	background:#333333;
+	margin:0 auto;
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+	margin-top:10px;
+	}
+	
+	.moinfotime{
+	width:90%;
+	height:200px;
+	background:#333333;
+	margin:0 auto;
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+	margin-top:15px;
+	}
+	.moinfocheck{
+	width:90%;
+	height:220px;
+	background:#333333;
+	margin:0 auto;
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+	margin-top:15px;
+	
+	}
+	.moinfocheck ul{
+	list-style:none;
+	float:left;
+	margin-top:15px;
+	}
+	.moinfocheck ul li{
+	color:white;
+	background: #064461;
+	background: linear-gradient(#003040, #002535);
+	padding:6px;
+	margin-bottom:5px;
+	border-radius:5px;
+	}
+	.moinfocheck ul[id=result] li{
+	color:white;
+	padding:6px;
+	text-align:left;
+	background:none;
+	}
+	.moinfocheck ul[id=result] li:nth-child(n+5){
+	float:left;
+	}
+	.moinfofee{
+	width:90%;
+	height:140px;
+	background:#333333;
+	margin:0 auto;
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+	margin-top:10px;
+	}
+	.moinfofee ul{
+	margin-top:7px;
+	margin-bottom:7px;
+	list-style:none;
+	float:left;
+	}
+	.moinfofee ul li{
+	color:white;
+	padding:6px;
+	text-align:left;
+	
+	}
+
+	.booktitle{
+		margin-top:15px;
+		text-align:left;
+		font-size:13pt;
+		margin-left:8%;
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+
+	#accordian {
+	background: #333333;
+	width: 250px;
+	height:300px;
+	margin: 15px auto 0 auto;
+	color: white;
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+	}
+
+	/* 메뉴 스타일 */
+	#accordian h3 {
+		font-size: 12px;
+		line-height: 34px;
+		margin:0;
+		cursor: pointer;
+		background: #064461;
+		background: linear-gradient(#003040, #002535);
+	}
+	#accordian h3:hover {
+		text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+	}
+
+	/* 아이콘폰트 스타일 */
+	#accordian h3 span {
+		font-size: 16px;
+		margin-right: 10px;
+	}
+	#accordian li {
+		list-style-type: none;
+	}
+	#accordian ul {
+		padding:0;
+	}
+	#accordian ul ul{
+		padding:0;
+		height:160px;
+		overflow-y:scroll;
+	}
+
+	/* 서브메뉴 스타일 */
+	#accordian ul ul li a {
+		color: white;
+		text-decoration: none;
+		font-size: 11px;
+		line-height: 27px;
+		text-align:left;
+		
+		display: block;
+		padding: 0 15px;
+		-webkit-transition: all 0.15s;
+		-moz-transition: all 0.15s;
+		-o-transition: all 0.15s;
+		-ms-transition: all 0.15s;
+		transition: all 0.15s;
+	}
+	#accordian ul ul li a:hover {
+		background: #003545;
+		border-left: 5px solid #09c;
+	}
+
+	/* active 클래스 외에 것은 보이지 않게 하기 */
+	#accordian ul ul {
+		display: none;
+	}
+	#accordian li.active ul {
+		display: block;
+	}
+	/*2번아코디언*/
+	#accordian2 {
+	background: #333333;
+	width: 250px;
+	height:300px;
+	margin: 15px auto 0 auto;
+	color: white;
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+	}
+
+	/* 메뉴 스타일 */
+	#accordian2 h3 {
+		font-size: 12px;
+		line-height: 34px;
+		margin:0;
+		cursor: pointer;
+		background: #064461;
+		background: linear-gradient(#003040, #002535);
+	}
+	#accordian2 h3:hover {
+		text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+	}
+
+	/* 아이콘폰트 스타일 */
+	#accordian2 h3 span {
+		font-size: 16px;
+		margin-right: 10px;
+	}
+	#accordian2 li {
+		list-style-type: none;
+	}
+	#accordian2 ul {
+		padding:0;
+	}
+	#accordian2 ul ul{
+		padding:0;
+		height:160px;
+		overflow-y:scroll;
+	}
+
+	/* 서브메뉴 스타일 */
+	#accordian2 ul ul li a {
+		color: white;
+		text-decoration: none;
+		font-size: 11px;
+		line-height: 27px;
+		text-align:left;
+		
+		display: block;
+		padding: 0 15px;
+		-webkit-transition: all 0.15s;
+		-moz-transition: all 0.15s;
+		-o-transition: all 0.15s;
+		-ms-transition: all 0.15s;
+		transition: all 0.15s;
+	}
+	#accordian2 ul ul li a:hover {
+		background: #003545;
+		border-left: 5px solid #09c;
+	}
+
+	/* active 클래스 외에 것은 보이지 않게 하기 */
+	#accordian2 ul ul {
+		display: none;
+	}
+	#accordian2 li.active ul {
+		display: block;
+	}
+

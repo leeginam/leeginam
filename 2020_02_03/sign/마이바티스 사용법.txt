@@ -1,0 +1,8 @@
+package controller---->cominterface.java(인터페이스)
+			service.java(db구문 연결 처리)
+			->(웹페이지 연결)
+	moderl-------->dto(getter,setter)
+		------>
+	mybatis------->connect.xml(db연결)
+		------>mapper.xml(db처리 (sql 문장 들어가는곳))
+		------>map.java(프로젝트db설정)

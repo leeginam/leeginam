@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="abc">  
+<!-- 여기안에 select insert문 장 들어감 -->
+<select id="information" resultType="dto">select * from board ORDER BY num desc</select>
+<select id="detail_info" parameterType="String" resultType="dto">select*from board where num=#{num};</select>
+<insert id="insert_info" parameterType="dto">insert into board(writename,moviename,title,contents,filename,day) values(#{writename},#{moviename},#{title},#{contents},#{filename},#{day}) </insert>
+<delete id="delete_info" parameterType="String">delete from board where num=#{delete}; </delete>
+<update id="update_info" parameterType="dto">update board SET title=#{title},contents=#{contents} where num=#{num};  </update>
+
+<!-- 여기부터는 댓글 관련-->
+<insert id="reply_insert" parameterType="reply_dto">insert into reply1(originnum,writename,comment,day) values(#{originnum},#{replywritename},#{comment},#{day})</insert>
+<select id="reply_select" parameterType="String" resultType="reply_dto">select*from reply1 where originnum=#{originnum}</select>
+</mapper>
