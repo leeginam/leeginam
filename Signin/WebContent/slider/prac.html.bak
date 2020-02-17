@@ -1,0 +1,26 @@
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="jquery.flexslider.js"></script>
+<link rel="stylesheet" type="text/css" href="css2.css"/>
+<link rel="stylesheet" type="text/css" href="flexslider.css"/>
+<html>
+<head>
+<body>
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/slide1.jpg" />
+    </li>
+    <li>
+      <img src="images/slide2.jpg" />
+    </li>
+    <li>
+      <img src="images/slide3.jpg" />
+    </li>
+    <li>
+      <img src="images/slide4.jpg" />
+    </li>
+  </ul>
+</div>
+</body>
+</head>
+</html>

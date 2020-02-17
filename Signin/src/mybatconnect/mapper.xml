@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="abc">
+
+
+	<select id="selectcomment" resultType="dto">select * from boardcomment where boardnum = #{num};</select>
+	<insert id="insertcomment" parameterType="dto">insert into boardcomment(commentwrither,comment,day,boardnum) values( #{commentwrither}, #{comment},#{day},#{boardnum});</insert>
+	<update id="updatecomment" parameterType="dto">update boardcomment set comment=#{comment} where commentnum=#{commentnum}; </update>
+	<delete id="deletecomment" parameterType="dto">delete from boardcomment where commentnum=#{commentnum};</delete>
+</mapper>
